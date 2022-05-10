@@ -8,11 +8,11 @@ const CardContainer = (props) => {
   // Array containing JSX Card components
   const cardArray = 
   [
-  <Card imageAlt='Astra' imageSrc={require('../assets/astra.png')} />,
-  <Card imageAlt='Breach' imageSrc={require('../assets/breach.png')} />,
-  <Card imageAlt='Brimstone' imageSrc={require('../assets/brimstone.png')} />,
-  <Card imageAlt='Chamber' imageSrc={require('../assets/chamber.png')} />,
-  <Card imageAlt='Cypher' imageSrc={require('../assets/cypher.png')} />
+  <Card incrementScore={props.incrementScore} imageAlt='Astra' imageSrc={require('../assets/astra.png')} />,
+  <Card incrementScore={props.incrementScore} imageAlt='Breach' imageSrc={require('../assets/breach.png')} />,
+  <Card incrementScore={props.incrementScore} imageAlt='Brimstone' imageSrc={require('../assets/brimstone.png')} />,
+  <Card incrementScore={props.incrementScore} imageAlt='Chamber' imageSrc={require('../assets/chamber.png')} />,
+  <Card incrementScore={props.incrementScore} imageAlt='Cypher' imageSrc={require('../assets/cypher.png')} />
   ];
 
   const myCardList = mapList(cardArray);
