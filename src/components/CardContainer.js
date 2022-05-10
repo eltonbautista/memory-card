@@ -17,7 +17,6 @@ const CardContainer = (props) => {
 
   const myCardList = mapList(cardArray);
 
-
   return (
     <div id="card-container">
       <ul id="ul-card">
