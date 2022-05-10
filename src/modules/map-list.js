@@ -1,5 +1,10 @@
+import randomizeArray from "./randomizeArray";
+
 const mapList = (arrayToMap) => {
   let increment = 0;
+  const arrayRandomized = randomizeArray(arrayToMap);
+
+console.log(arrayRandomized);
 
   arrayToMap.map((element) => {
     
