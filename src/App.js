@@ -8,6 +8,7 @@ function App() {
   const [currentScore, setCurrentScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
 
+  // logic for incrementing score
   const handleIncrementScore = () => {
     setCurrentScore(currentScore + 1);
     setBestScore(bestScore + 1);
