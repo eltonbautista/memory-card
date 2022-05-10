@@ -1,0 +1,14 @@
+#ul-card {
+  display: grid;
+  grid-auto-flow: column;
+  border: 1px solid black;
+  gap: 10px;
+  justify-items: center;
+}
+
+.image-div {
+  margin: 1rem 0 1rem 0;
+  outline: 1px solid blue;
+  display: grid;
+  justify-content: center;
+}
