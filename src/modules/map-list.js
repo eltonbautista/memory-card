@@ -13,7 +13,7 @@ console.log(arrayRandomized);
       <li key={'card' + increment}>{element}</li>
     )
   })
-  return arrayToMap;
+  return arrayRandomized;
 }
 
 export default mapList;
