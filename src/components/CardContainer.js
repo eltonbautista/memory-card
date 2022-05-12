@@ -1,44 +1,31 @@
 import React from "react";
 import mapList from "../modules/map-list";
 import Card from "./Card";
+import factoryFunctionCard from "../modules/factoryFunctionCard";
+import buildMyValues from "../modules/imagePathFunction";
 // The CardContainer is used to hold my card elements.
 // Responsible for shuffling the order of the cards after a user clicks on a card.
 
 const CardContainer = (props) => {
   const { agentProfiles } = props;
+  
+  // Get agent name string via key
+  const agentNamesArray = Object.keys(agentProfiles);
 
+  // Lists to keep my image path and agent Card components in
+  const agentImagePath = [];
+  const agentArray = [];
 
-  const cardArray = 
-  [
-  <Card incrementScore={props.incrementScore} 
-      imageAlt={agentProfiles.astra.imageAlt} imageSrc={require('../assets/astra.png')} 
-      isSelected={agentProfiles.astra.isSelected}
-      />,
+  const imagePathFunction = (agentName) => require(`../assets/${agentName}.png`);
 
-  <Card incrementScore={props.incrementScore} 
-      imageAlt={agentProfiles.breach.imageAlt} imageSrc={require('../assets/breach.png')} 
-      isSelected={agentProfiles.breach.isSelected}
-      />,
+  buildMyValues(agentNamesArray, agentImagePath, imagePathFunction, agentNamesArray);
+  
+  // Function to fill my agentArray
+  agentImagePath.forEach((imgSrc) => {
+    agentArray.push(factoryFunctionCard(Card, props, agentProfiles, agentNamesArray[agentImagePath.indexOf(imgSrc)], imgSrc))
+  })
 
-  <Card incrementScore={props.incrementScore} 
-      imageAlt={agentProfiles.brimstone.imageAlt} imageSrc={require('../assets/brimstone.png')} 
-      isSelected={agentProfiles.brimstone.isSelected}
-      />,
-
-  <Card incrementScore={props.incrementScore} 
-      imageAlt={agentProfiles.chamber.imageAlt} imageSrc={require('../assets/chamber.png')} 
-      isSelected={agentProfiles.chamber.isSelected}
-      />,
-
-  <Card incrementScore={props.incrementScore} 
-      imageAlt={agentProfiles.cypher.imageAlt} imageSrc={require('../assets/cypher.png')} 
-      isSelected={agentProfiles.cypher.isSelected}
-      />
-
-  ];
-
-  // myCardList is the array of cards after being shuffled by mapList()
-  const myCardList = mapList(cardArray);
+  const myCardList = mapList(agentArray);
 
   return (
     <div id="card-container">
