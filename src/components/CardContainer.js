@@ -16,7 +16,7 @@ const CardContainer = (props) => {
   const agentImagePath = [];
   const agentArray = [];
 
-  const imagePathFunction = (agentName) => require(`../assets/${agentName}.png`);
+  const imagePathFunction = (agentName) => require(`../assets/agents/${agentName}.png`);
 
   buildMyValues(agentNamesArray, agentImagePath, imagePathFunction, agentNamesArray);
   

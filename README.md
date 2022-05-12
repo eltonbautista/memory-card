@@ -3,6 +3,22 @@ A memory card game built with React.js
 The purpose of this project is to further practice React and apply new topics/concepts that I have recently learned.
 Specifically, I will be putting to practice my understanding of function components, props, state, hooks, and/or lifecycle methods. 
 
+Copyright Disclaimer: All rights are reserved to the rightful bodies. This project is purely for fun and fan made, it is free use i.e. non-commercial.
+
+Assets used: 
+- Agent images: https://valorant.fandom.com/wiki/Player_Cards
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
