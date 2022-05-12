@@ -8,6 +8,11 @@ test('Testing agent factory function', () => {
       imageAlt: 'astra',
       imageSrc: '../assets/astra.png',
       isSelected: false,
-      toggleIsSelected: astra.toggleIsSelected
+      isSelectedTrue: astra.isSelectedTrue
     })
+})
+
+test('Using public method to modify property value', () => {
+  astra.isSelectedTrue()
+  expect(astra.isSelected).toBe(true);
 })
