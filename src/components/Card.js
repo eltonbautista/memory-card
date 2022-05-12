@@ -1,5 +1,6 @@
 import React from "react";
 
+// The Card component is used for displaying my agents.
 const Card = (props) => {
   return (
     <div className="image-div" onClick={props.incrementScore} >

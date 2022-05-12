@@ -1,5 +1,8 @@
 import randomizeArray from "./randomizeArray";
 
+// A function used to map the passed array
+// It utilizes my randomizeArray module to shuffle the array's contents
+ 
 const mapList = (arrayToMap) => {
   let increment = 0;
   const arrayRandomized = randomizeArray(arrayToMap);
