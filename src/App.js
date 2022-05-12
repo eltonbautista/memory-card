@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import factoryFunctionAgent from './modules/factoryFunctionAgent';
 
 function App() {
+
   // State for keeping track of my scores
   const [currentScore, setCurrentScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
@@ -24,6 +25,19 @@ function App() {
   // an effect that checks if all agent isSelected is 'true';
 
   useEffect(() => {
+    const localBestScore = localStorage.getItem('localBestScore');
+    if (!localStorage.getItem('localBestScore')) {
+      localStorage.setItem('localBestScore', 0);
+    }
+
+  // Conditional to display user's highest achieved score.
+    if (localBestScore > currentScore) {
+      setBestScore(localBestScore);
+    } else if (localBestScore < currentScore) {
+      localStorage.setItem('localBestScore', currentScore);
+      setBestScore(localStorage.getItem('localBestScore'));
+    }
+
     const [...myAgents] = document.querySelectorAll('.agent');
     const booleanArray = [];
     const checkIfAllTrue = (bool) => bool === 'true';
@@ -35,30 +49,33 @@ function App() {
     if (booleanArray.every(checkIfAllTrue)) {
       console.log('game over');
     }
-  }, [profile])
+  }, [bestScore, currentScore])
 
   // My onClick function that is passed down to my cards
   // It increments score, as well as changes the card's data-selected attribute to true
   // Utilizes a public method for security purposes
-
   function handleIncrementScore(e) {
     // alt is used for object property accessing via square brack notation
     const alt = e.target.alt;
-    
+
+
     if (e.target.dataset.selected === 'false') {
+
       setCurrentScore(currentScore + 1);
-      setBestScore(bestScore + 1);
 
     // A deep copy of profile is created
     // The deep copy changes the appropriate agent's isSelected prop to true
     // The deep copy is passed into profile as the new state
-
       const myUpdatedProfile = {...profile};
       myUpdatedProfile[alt].isSelectedTrue();
   
       setProfile(myUpdatedProfile);
+    } else if (e.target.dataset.selected === 'true') {
+      // If the user clicks on an agent they have clicked on before (isSelected === 'true')
+      // Then currentScore is turned back to 0, and profile is set back to default!!
+      setCurrentScore(0);
+      setProfile(myAgentProfiles);
     }
-    // console.log('lose function here');
 
   }
 
