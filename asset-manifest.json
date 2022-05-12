@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.442267b4.css",
+    "main.js": "/memory-card/static/js/main.6950637d.js",
+    "static/media/raze.png": "/memory-card/static/media/raze.e57229fb4ec1834dc409.png",
+    "static/media/skye.png": "/memory-card/static/media/skye.ffceccf4671507808772.png",
+    "static/media/breach.png": "/memory-card/static/media/breach.8089be4f2c845f635357.png",
+    "static/media/ascent.jpg": "/memory-card/static/media/ascent.63f371d048de713cc5db.jpg",
+    "static/media/omen.png": "/memory-card/static/media/omen.f13e65643532fc24a436.png",
+    "static/media/astra.png": "/memory-card/static/media/astra.84ba5ce9ccdcaf413fe8.png",
+    "static/media/brimstone.png": "/memory-card/static/media/brimstone.fc948cb926c94e336cf5.png",
+    "static/media/reyna.png": "/memory-card/static/media/reyna.93e1dfd5f4627a4185ab.png",
+    "static/media/viper.png": "/memory-card/static/media/viper.bfc9c676e276e9c4d5df.png",
+    "static/media/phoenix.png": "/memory-card/static/media/phoenix.3bf9a0cb85d780d5569d.png",
+    "static/media/kayo.png": "/memory-card/static/media/kayo.e79dce7c86f1b0308f97.png",
+    "static/media/chamber.png": "/memory-card/static/media/chamber.21b3473a2a4d3ca74609.png",
+    "static/media/sage.png": "/memory-card/static/media/sage.48a95403d3d1fbf727f6.png",
+    "static/media/sova.png": "/memory-card/static/media/sova.92988562a1a58925eb3f.png",
+    "static/media/yoru.png": "/memory-card/static/media/yoru.c9d167f165e883e3df61.png",
+    "static/media/yoruclone.png": "/memory-card/static/media/yoruclone.c9d167f165e883e3df61.png",
+    "static/media/killjoy.png": "/memory-card/static/media/killjoy.c039d1bb80e5262d5269.png",
+    "static/media/jett.png": "/memory-card/static/media/jett.14b8a731261eb24a1d52.png",
+    "static/media/neon.png": "/memory-card/static/media/neon.ed4f355af76476aafe5c.png",
+    "static/media/cypher.png": "/memory-card/static/media/cypher.c52885580615cd86704e.png",
+    "static/media/fade.png": "/memory-card/static/media/fade.dc88752efe7aad1c0238.png",
+    "index.html": "/memory-card/index.html",
+    "main.442267b4.css.map": "/memory-card/static/css/main.442267b4.css.map",
+    "main.6950637d.js.map": "/memory-card/static/js/main.6950637d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.442267b4.css",
+    "static/js/main.6950637d.js"
+  ]
+}
