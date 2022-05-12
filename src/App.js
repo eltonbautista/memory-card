@@ -38,7 +38,7 @@ function App() {
       setBestScore(localStorage.getItem('localBestScore'));
     }
 
-    const [...myAgents] = document.querySelectorAll('.agent');
+    const myAgents = [...document.querySelectorAll('.agent')];
     const booleanArray = [];
     const checkIfAllTrue = (bool) => bool === 'true';
 
