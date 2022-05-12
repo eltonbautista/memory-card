@@ -1,14 +1,64 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-image: url('./assets/ascent.jpg');
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+
+/* APP */
+
+header {
+  color: white;
+}
+
+#scoreboard {
+  color: white;
+}
+
 #ul-card {
   display: grid;
   grid-auto-flow: column;
-  border: 1px solid black;
-  gap: 10px;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  /* gap: 100px; */
   justify-items: center;
+  height: fit-content;
+  padding-left: 0;
 }
 
 .image-div {
-  margin: 1rem 0 1rem 0;
-  outline: 1px solid blue;
+  margin: 4rem 0 4rem 0;
   display: grid;
   justify-content: center;
+  width: fit-content;
+  box-shadow: 2.5px 2.5px 2.5px 2.5px white, -2.5px -2.5px 2.5px 2.5px white;
+}
+
+#ul-card > div:nth-child(19) {
+  align-self: center;
 }

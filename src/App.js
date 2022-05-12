@@ -39,6 +39,7 @@ function App() {
   // an effect that checks if all agent isSelected is 'true';
 
   useEffect(() => {
+
     const localBestScore = localStorage.getItem('localBestScore');
     if (!localStorage.getItem('localBestScore')) {
       localStorage.setItem('localBestScore', 0);
@@ -95,7 +96,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header title='Memory Card Game'/>
+      <Header title='Valorant Memory Card Game'/>
       {/* scores are state values */}
       <Scoreboard 
         currentScore={currentScore} 
