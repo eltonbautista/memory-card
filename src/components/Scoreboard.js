@@ -10,7 +10,7 @@ const Scoreboard = (props) => {
   return (
     <div id="scoreboard">
       <div>Current Score: {props.currentScore}</div>
-      <div>Best Score: {props.bestScore}</div>
+      <div>Personal Best: {props.bestScore}</div>
     </div>
   )
 }
