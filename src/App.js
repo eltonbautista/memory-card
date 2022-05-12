@@ -14,11 +14,25 @@ function App() {
   // State for my agent profiles utilizing a factory function
   const myAgentProfiles = 
   {
-    astra: factoryFunctionAgent('astra', '', false),
-    breach: factoryFunctionAgent('breach', '', false),
-    brimstone: factoryFunctionAgent('brimstone', '', false),
-    chamber: factoryFunctionAgent('chamber', '', false),
-    cypher: factoryFunctionAgent('cypher', '', false),
+    astra: factoryFunctionAgent('astra', false),
+    breach: factoryFunctionAgent('breach', false),
+    brimstone: factoryFunctionAgent('brimstone', false),
+    chamber: factoryFunctionAgent('chamber', false),
+    cypher: factoryFunctionAgent('cypher', false),
+    fade: factoryFunctionAgent('fade', false),
+    jett: factoryFunctionAgent('jett', false),
+    kayo: factoryFunctionAgent('kayo', false),
+    killjoy: factoryFunctionAgent('killjoy', false),
+    neon: factoryFunctionAgent('neon', false),
+    omen: factoryFunctionAgent('omen', false),
+    phoenix: factoryFunctionAgent('phoenix', false),
+    raze: factoryFunctionAgent('raze', false),
+    reyna: factoryFunctionAgent('reyna', false),
+    sage: factoryFunctionAgent('sage', false),
+    skye: factoryFunctionAgent('skye', false),
+    sova: factoryFunctionAgent('sova', false),
+    viper: factoryFunctionAgent('viper', false),
+    yoru: factoryFunctionAgent('yoru', false),
   }
   const [profile, setProfile] = useState(myAgentProfiles);
 
