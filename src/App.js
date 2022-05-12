@@ -1,7 +1,9 @@
 import './App.css';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import Scoreboard from './components/Scoreboard';
 import CardContainer from './components/CardContainer';
+
 import { useEffect, useState } from 'react';
 import factoryFunctionAgent from './modules/factoryFunctionAgent';
 
@@ -12,6 +14,7 @@ function App() {
   const [bestScore, setBestScore] = useState(0);
   
   // State for my agent profiles utilizing a factory function
+  // LOL added a Yoru clone
   const myAgentProfiles = 
   {
     astra: factoryFunctionAgent('astra', false),
@@ -33,6 +36,7 @@ function App() {
     sova: factoryFunctionAgent('sova', false),
     viper: factoryFunctionAgent('viper', false),
     yoru: factoryFunctionAgent('yoru', false),
+    yoruclone: factoryFunctionAgent('yoruclone', false),
   }
   const [profile, setProfile] = useState(myAgentProfiles);
 
@@ -70,6 +74,7 @@ function App() {
   // It increments score, as well as changes the card's data-selected attribute to true
   // Utilizes a public method for security purposes
   function handleIncrementScore(e) {
+    
     // alt is used for object property accessing via square brack notation
     const alt = e.target.alt;
 
@@ -96,7 +101,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header title='Valorant Memory Card Game'/>
+      <Header title="Valorant Memory Card Game"/>
       {/* scores are state values */}
       <Scoreboard 
         currentScore={currentScore} 
@@ -106,6 +111,7 @@ function App() {
         incrementScore={handleIncrementScore}
         agentProfiles={profile}
       />
+      <Footer title="A rendition of the popular game: Memory Card, the theme is from the popular game Valorant by Riot Games" />
     </div>
   );
 }

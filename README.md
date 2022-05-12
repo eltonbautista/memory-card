@@ -7,15 +7,7 @@ Copyright Disclaimer: All rights are reserved to the rightful bodies. This proje
 
 Assets used: 
 - Agent images: https://valorant.fandom.com/wiki/Player_Cards
-
-
-
-
-
-
-
-
-
+- Background image: https://wallpaperaccess.com/valorant-map#google_vignette
 
 
 
