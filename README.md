@@ -3,11 +3,18 @@ A memory card game built with React.js
 The purpose of this project is to further practice React and apply new topics/concepts that I have recently learned.
 Specifically, I will be putting to practice my understanding of function components, props, state, hooks, and/or lifecycle methods. 
 
-Copyright Disclaimer: All rights are reserved to the rightful bodies. This project is purely for fun and fan made, it is free use i.e. non-commercial.
 
+![image](https://user-images.githubusercontent.com/94667178/168144079-089ae736-622b-4537-837b-ad5834d1753a.png)
+
+[Follow me on Twitter!](https://twitter.com/psychtotech)<img src="https://img.icons8.com/color/50/000000/twitter--v2.png"/>
+
+[Connect with me on LinkedIn!](https://www.linkedin.com/in/elton-bautista-496a011ab/)
+
+Copyright Disclaimer: All rights are reserved to the rightful bodies. This project is purely for fun and fan made, it is free use i.e. non-commercial.
 Assets used: 
 - Agent images: https://valorant.fandom.com/wiki/Player_Cards
 - Background image: https://wallpaperaccess.com/valorant-map#google_vignette
+- <a target="_blank" href="https://icons8.com/icon/xWVjuc9hryql/twitter">Twitter</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 
 
 
